@@ -8,9 +8,9 @@ import pandas as pd
 import sys, os
 from pathlib import Path
 
-# Add help_tickets directory to Python path
-BASE_DIR = Path(__file__).resolve().parent
-sys.path.insert(0, str(BASE_DIR))
+# Add repo root to path
+ROOT_DIR = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT_DIR))
 
 from help_tickets.src.data_loader import (
     load_raw_tickets,

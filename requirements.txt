@@ -9,3 +9,5 @@ instaloader
 plotly
 streamlit
 pyarrow
+altair<5.0.0
+# Add your other packages, e.g., pandas, plotly

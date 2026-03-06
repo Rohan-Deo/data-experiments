@@ -6,18 +6,18 @@ Run with: streamlit run help_tickets/dashboard.py
 import streamlit as st
 import pandas as pd
 import sys, os
-from pathlib import Path
+# from pathlib import Path
 
-# Add help_tickets directory to Python path
-BASE_DIR = Path(__file__).resolve().parent
-sys.path.insert(0, str(BASE_DIR))
+# # Add help_tickets directory to Python path
+# BASE_DIR = Path(__file__).resolve().parent
+# sys.path.insert(0, str(BASE_DIR))
 
-from src.data_loader import (
+from help_tickets.src.data_loader import (
     load_raw_tickets,
     load_combined_categories,
     get_batch_list,
 )
-from src.analysis import (
+from help_tickets.src.analysis import (
     compute_kpis,
     overall_comparison,
     category_comparison,
@@ -27,7 +27,7 @@ from src.analysis import (
     top_batches,
     category_summary_by_period,
 )
-from src.charts import (
+from help_tickets.src.charts import (
     overall_ticket_bar,
     help_vs_support_stacked,
     help_support_pct_bar,

@@ -8,16 +8,16 @@ import pandas as pd
 import sys, os
 from pathlib import Path
 
-# Add repo root to path
-ROOT_DIR = Path(__file__).resolve().parents[1]
-sys.path.insert(0, str(ROOT_DIR))
+# Add src folder to Python path
+SRC_DIR = Path(__file__).resolve().parent / "src"
+sys.path.insert(0, str(SRC_DIR))
 
-from help_tickets.src.data_loader import (
+from src.data_loader import (
     load_raw_tickets,
     load_combined_categories,
     get_batch_list,
 )
-from help_tickets.src.analysis import (
+from src.analysis import (
     compute_kpis,
     overall_comparison,
     category_comparison,
@@ -27,7 +27,7 @@ from help_tickets.src.analysis import (
     top_batches,
     category_summary_by_period,
 )
-from help_tickets.src.charts import (
+from src.charts import (
     overall_ticket_bar,
     help_vs_support_stacked,
     help_support_pct_bar,

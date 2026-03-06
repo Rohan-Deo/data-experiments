@@ -6,11 +6,11 @@ Run with: streamlit run help_tickets/dashboard.py
 import streamlit as st
 import pandas as pd
 import sys, os
-# from pathlib import Path
+from pathlib import Path
 
-# # Add help_tickets directory to Python path
-# BASE_DIR = Path(__file__).resolve().parent
-# sys.path.insert(0, str(BASE_DIR))
+# Add help_tickets directory to Python path
+BASE_DIR = Path(__file__).resolve().parent
+sys.path.insert(0, str(BASE_DIR))
 
 from help_tickets.src.data_loader import (
     load_raw_tickets,

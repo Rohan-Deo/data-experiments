@@ -8,9 +8,9 @@ import pandas as pd
 import sys, os
 from pathlib import Path
 
-# Add the help_tickets directory to Python path
+# Add help_tickets directory to Python path
 BASE_DIR = Path(__file__).resolve().parent
-sys.path.append(str(BASE_DIR))
+sys.path.insert(0, str(BASE_DIR))
 
 from src.data_loader import (
     load_raw_tickets,

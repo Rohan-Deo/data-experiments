@@ -6,6 +6,9 @@ Run with: streamlit run help_tickets/dashboard.py
 import streamlit as st
 import pandas as pd
 
+import sys, os
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
+
 from src.data_loader import (
     load_raw_tickets,
     load_combined_categories,

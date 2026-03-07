@@ -150,6 +150,13 @@ def _parse_ticket_df(df: pd.DataFrame, period: str) -> pd.DataFrame:
     return df
 
 
+def ticket_level_files_exist() -> bool:
+    """Return True if both st_tickets CSV files exist in the data directory."""
+    pre_path = os.path.join(DATA_DIR, TICKET_PRE_FILE)
+    post_path = os.path.join(DATA_DIR, TICKET_POST_FILE)
+    return os.path.isfile(pre_path) and os.path.isfile(post_path)
+
+
 def load_ticket_level() -> tuple[pd.DataFrame, pd.DataFrame]:
     """Return (pre, post) ticket-level DataFrames, cleaned and enriched."""
     pre = _parse_ticket_df(_read_csv(TICKET_PRE_FILE), "pre")

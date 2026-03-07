@@ -192,3 +192,28 @@ def top_batches(df: pd.DataFrame, n: int = 10) -> pd.DataFrame:
                                           "Total Support Tickets", "Help Ticket %"]]
         .reset_index(drop=True)
     )
+
+
+# ---------------------------------------------------------------------------
+# Category-by-batch (top categories per batch, pre vs post)
+# ---------------------------------------------------------------------------
+
+def top_categories_by_batch(cat_df: pd.DataFrame, batches: list[str], top_n_cat: int = 5) -> pd.DataFrame:
+    """
+    For each batch in batches, return top N categories in pre and in post with ticket counts.
+    Returns a long-format table: Batch Name, period, rank, Category, Total Tickets.
+    """
+    rows = []
+    for batch in batches:
+        sub = cat_df[cat_df["Batch Name"] == batch]
+        for period in ["pre", "post"]:
+            period_sub = sub[sub["period"] == period].nlargest(top_n_cat, "Total Tickets")
+            for r, (_, row) in enumerate(period_sub.iterrows(), 1):
+                rows.append({
+                    "Batch Name": batch,
+                    "period": period,
+                    "rank": r,
+                    "Category": row["Category"],
+                    "Total Tickets": int(row["Total Tickets"]),
+                })
+    return pd.DataFrame(rows)

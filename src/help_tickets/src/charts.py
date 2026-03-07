@@ -240,3 +240,83 @@ def category_treemap(cat_df: pd.DataFrame, period: str) -> go.Figure:
         height=450,
     )
     return fig
+
+
+def category_by_batch_stacked(cat_by_batch_df: pd.DataFrame) -> tuple[go.Figure, go.Figure]:
+    """
+    Two stacked bar charts: top categories per batch for Pre and for Post.
+    cat_by_batch_df must have columns: Batch Name, period, Category, Total Tickets.
+    Returns (fig_pre, fig_post). Batch order is by total tickets (desc) within each period.
+    """
+    if cat_by_batch_df.empty:
+        empty = go.Figure().update_layout(title="No data", height=400)
+        return empty, empty
+
+    def _make_stacked(period_label: str, period_key: str, color_map: dict) -> go.Figure:
+        sub = cat_by_batch_df[cat_by_batch_df["period"] == period_key]
+        if sub.empty:
+            return go.Figure().update_layout(title=f"{period_label} – No data", height=400)
+        # Order batches by total tickets (desc) so top batch at top
+        batch_totals = sub.groupby("Batch Name")["Total Tickets"].sum().sort_values(ascending=True)
+        batch_order = batch_totals.index.tolist()
+        fig = px.bar(
+            sub,
+            y="Batch Name",
+            x="Total Tickets",
+            color="Category",
+            orientation="h",
+            barmode="stack",
+            category_orders={"Batch Name": batch_order},
+            color_discrete_map=color_map,
+        )
+        fig.update_layout(
+            title=f"Top categories by batch – {period_label}",
+            xaxis_title="Total Tickets",
+            yaxis_title="Batch",
+            height=max(500, len(batch_order) * 22 + 130),
+            yaxis=dict(autorange="reversed"),
+            xaxis=dict(title_standoff=30, automargin=True),
+            margin=dict(t=80, r=20, b=155, l=20),
+            legend=dict(
+                orientation="h",
+                yanchor="top",
+                y=-0.32,
+                xanchor="left",
+                x=0,
+                title_text="Category",
+            ),
+        )
+        return fig
+
+    # Use a consistent color set for categories (plotly default palette)
+    categories = cat_by_batch_df["Category"].unique().tolist()
+    color_list = px.colors.qualitative.Set3 + px.colors.qualitative.Pastel
+    color_map = {c: color_list[i % len(color_list)] for i, c in enumerate(categories)}
+
+    fig_pre = _make_stacked("Pre (26 Jan – 14 Feb)", "pre", color_map)
+    fig_post = _make_stacked("Post (15 Feb – 5 Mar)", "post", color_map)
+    return fig_pre, fig_post
+
+
+def category_by_batch_heatmap(cat_by_batch_df: pd.DataFrame, period: str) -> go.Figure:
+    """Heatmap: batches (Y) x categories (X), color = ticket count. One period only."""
+    sub = cat_by_batch_df[cat_by_batch_df["period"] == period].copy()
+    if sub.empty:
+        return go.Figure().update_layout(title=f"No data – {period}", height=400)
+    pivot = sub.pivot_table(
+        index="Batch Name", columns="Category", values="Total Tickets", fill_value=0
+    )
+    # Order batches by row sum (desc)
+    pivot = pivot.loc[pivot.sum(axis=1).sort_values(ascending=False).index]
+    fig = px.imshow(
+        pivot,
+        labels=dict(x="Category", y="Batch", color="Tickets"),
+        aspect="auto",
+        color_continuous_scale="Blues",
+    )
+    fig.update_layout(
+        title=f"Category mix by batch – {'Pre' if period == 'pre' else 'Post'}",
+        height=max(350, pivot.shape[0] * 24),
+        xaxis_tickangle=-45,
+    )
+    return fig

@@ -25,6 +25,7 @@ from src.analysis import (
     batch_comparison,
     resolution_metrics,
     top_batches,
+    top_categories_by_batch,
     category_summary_by_period,
 )
 from src.charts import (
@@ -39,6 +40,8 @@ from src.charts import (
     top_batches_bar,
     user_comparison_bar,
     category_treemap,
+    category_by_batch_stacked,
+    category_by_batch_heatmap,
 )
 
 # ---------------------------------------------------------------------------
@@ -174,6 +177,56 @@ with tab_categories:
 
     st.subheader("Full Category Table")
     st.dataframe(cat_comp, use_container_width=True, height=400)
+
+    # ---- Category mix by batch (respects batch filter) ----
+    st.subheader("Category mix by batch")
+    st.caption(
+        "Top categories per batch in Pre and Post. When no batch filter is applied, "
+        "the top batches by combined volume are shown. Use the sidebar to filter by batch."
+    )
+
+    # Batch list: filtered selection or top N by combined (pre+post) volume
+    if selected_batches:
+        batch_list_cat = selected_batches
+        max_batches_note = f"Showing {len(batch_list_cat)} selected batch(es)."
+    else:
+        pre_totals = pre.set_index("Batch Name")["Total Tickets"]
+        post_totals = post.set_index("Batch Name")["Total Tickets"]
+        combined_vol = pre_totals.add(post_totals, fill_value=0).sort_values(ascending=False)
+        max_batches = 16
+        batch_list_cat = combined_vol.head(max_batches).index.tolist()
+        max_batches_note = f"Showing top {len(batch_list_cat)} batches by combined (Pre + Post) ticket volume."
+
+    top_n_cat_per_batch = st.sidebar.slider(
+        "Top N categories per batch (category-by-batch view)",
+        min_value=3,
+        max_value=8,
+        value=5,
+        help="Number of top categories to show for each batch in Pre and Post.",
+    )
+
+    if batch_list_cat:
+        cat_by_batch_df = top_categories_by_batch(cat, batch_list_cat, top_n_cat=top_n_cat_per_batch)
+        st.caption(max_batches_note)
+
+        fig_pre_cb, fig_post_cb = category_by_batch_stacked(cat_by_batch_df)
+        stacked_pre_tab, stacked_post_tab = st.tabs(["Pre view", "Post view"])
+        with stacked_pre_tab:
+            st.plotly_chart(fig_pre_cb, use_container_width=True)
+        with stacked_post_tab:
+            st.plotly_chart(fig_post_cb, use_container_width=True)
+
+        with st.expander("Heatmap view – Category × Batch (Pre and Post)"):
+            heatmap_pre_tab, heatmap_post_tab = st.tabs(["Pre heatmap", "Post heatmap"])
+            with heatmap_pre_tab:
+                st.plotly_chart(category_by_batch_heatmap(cat_by_batch_df, "pre"), use_container_width=True)
+            with heatmap_post_tab:
+                st.plotly_chart(category_by_batch_heatmap(cat_by_batch_df, "post"), use_container_width=True)
+
+        with st.expander("Category-by-batch data table"):
+            st.dataframe(cat_by_batch_df, use_container_width=True, height=400)
+    else:
+        st.info("No batches in scope. Select batches in the sidebar or ensure data is loaded.")
 
 # ===== TAB: Support Deep-Dive =====
 with tab_support:

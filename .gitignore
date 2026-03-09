@@ -25,3 +25,6 @@ datasets/
 depute/
 detractors/
 website_qc/
+
+# Files
+src/help_tickets/STAKEHOLDER_SUMMARY.md

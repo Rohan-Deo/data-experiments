@@ -1,0 +1,157 @@
+question,category,sub_category
+I am unable to view or access my attendance details or the attendance section in the app or LMS. What should I do?,attendance-query,attendance-access
+How can I get an attendance certificate or proof of total learning hours for external requirements such as CPE or employer verification?,attendance-query,attendance-certificate
+Some sessions show no attendance status (neither present nor absent) or show absences for dates before my official start date. How can I get these discrepancies corrected?,attendance-query,attendance-discrepancy
+"Are there any exceptions, refunds, or options to defer or shift to another batch if my overall attendance is low due to genuine constraints?",attendance-query,attendance-exceptions-and-refund
+"I am joining classes from a different device, Zoom ID, email, or external link and my attendance is not recorded. How can I ensure my attendance is captured correctly?",attendance-query,attendance-identity-device
+"If I have low attendance or some sessions marked absent, how will it affect my course completion, CGPA, certificate, and placement or IRP eligibility?",attendance-query,attendance-impact
+"I missed or will miss several classes due to exams, work, or personal reasons. How can I manage, make up, or catch up on my attendance and coursework?",attendance-query,attendance-makeup
+"How can I check my current attendance percentage and whether I meet the minimum criteria required for course completion, exams, or placements?",attendance-query,attendance-percentage
+"How is attendance calculated for live and recorded sessions, what minimum percentage is required for course completion, certificate, and placement eligibility, and do tutorial or doubt sessions count?",attendance-query,attendance-policy
+How do I correctly mark or record my attendance for online classes so that it is captured properly in the LMS?,attendance-query,attendance-process
+My attendance and assignment completion status or overall course progress are not updating correctly on the LMS. How can I get this fixed?,attendance-query,attendance-progress-tracking
+"I missed classes, assignments, or evaluations due to health, exams, or personal emergencies. How will this affect my attendance and grades, and can I get leave, extensions, or regularization?",attendance-query,attendance-regularization
+My attendance is not updating correctly across multiple sessions or the overall percentage looks wrong despite regular participation. How can I get my attendance reviewed and bulk-corrected?,attendance-query,attendance-review
+"How does the attendance tracking system work for live Zoom sessions and LMS recordings, including late-joining grace periods and watching videos in parts or at different speeds?",attendance-query,attendance-rules
+How can I check my attendance status for each lecture or session on the new dashboard layout or attendance calendar?,attendance-query,attendance-status
+How can I check or track my attendance and attendance percentage for all classes and sessions in one place on the LMS?,attendance-query,attendance-summary
+My overall attendance or course progress is not syncing or updating even after completing all required lectures and videos. How can I resolve this technical issue?,attendance-query,attendance-sync-issue
+"The attendance option, status, or dashboard is missing or not visible on my LMS. How can I access or restore my attendance view?",attendance-query,attendance-visibility
+My attendance is not being recorded properly when I join via Zoom mobile app or due to Zoom authentication issues. How can I fix this integration problem?,attendance-query,attendance-zoom-integration
+"I attended a live class or watched the full recording within the allowed time, but my attendance is still marked absent or not updated. What should I do?",attendance-query,incorrect-attendance
+"I want to apply for leave or request attendance adjustment for specific dates due to exams, illness, or emergencies. What is the process?",attendance-query,leave-and-exceptions
+My attendance shows absent or incorrect even though I attended the live class or joined via Zoom. How can I get my live-session attendance corrected?,attendance-query,live-session-attendance
+"I am not receiving Zoom links, class joining details, or pre-class notifications, which is affecting my ability to attend and get attendance. What should I do?",attendance-query,missing-zoom-link
+I watched recorded lectures but my attendance is not getting marked or updated. How is attendance for recordings calculated and within what time window is it counted?,attendance-query,recording-attendance
+My attendance is frequently marked absent or not recorded correctly due to technical issues in the app or LMS. How can I get this recurring problem fixed?,attendance-query,technical-attendance-issues
+"Where can I see my detailed attendance record and overall attendance percentage on the LMS, and how can I track it over time?",attendance-query,view-attendance
+"When will I receive my admit card or hall ticket and exam center or login details, and what should I do if I cannot download or access it or if details are incorrect?",evaluation,admit-card
+"When will I receive my final certificate from the partner institute or university, and will it mention module-wise performance or CGPA?",evaluation,certificate
+"What certificate will I receive upon course completion, what minimum CGPA or scores are required, and will I get any certificate if I do not meet all passing criteria?",evaluation,certificate-eligibility
+"How is my CGPA calculated from quizzes, assignments, and exams, and where can I see my current CGPA or report card?",evaluation,cgpa-info
+"Are assignments and projects included in the overall evaluation and CGPA, and what is their weightage compared to quizzes and exams?",evaluation,evaluation-policy
+"When are my upcoming evaluations or exams scheduled, how do multiple slots work, and where can I see the detailed evaluation calendar?",evaluation,evaluation-schedule
+"I am unable to start or access an exam or quiz because the link, start button, or attempt option is not visible or not working. What should I do?",evaluation,exam-access-issues
+"Can I change my exam mode or center (online vs offline, different city) or reschedule my offline exam date or slot due to health, travel, or exam clashes?",evaluation,exam-mode-change
+"What is the exam or evaluation pattern and syllabus, including question types, marking scheme, negative marking, and module-wise weightage?",evaluation,exam-pattern
+"What are the rules during exams regarding use of notes, calculators, AI tools, rough sheets, and negative marking, and how is malpractice handled?",evaluation,exam-rules
+"What is the syllabus, pattern, and weightage for the upcoming offline or final exam, and will it cover only the current module or all modules?",evaluation,exam-syllabus
+"How are assignments, projects, and viva or presentations evaluated and graded, and where can I see my scores and feedback?",evaluation,grading-criteria
+"How is grading done for evaluations (including negative marking, partial marking, and scaling), and what is the minimum score required to pass?",evaluation,grading-policy
+"I missed or could not attend an evaluation, quiz, or exam due to illness, technical issues, travel, or other personal reasons. Can I get a reschedule, reattempt, or makeup evaluation?",evaluation,missed-evaluation
+"What is the format and logistics of offline exams (center allocation, allowed items, calculator/rough work rules, mobile storage, laptop requirement)?",evaluation,offline-exam-policy
+"What are the passing criteria and minimum score or CGPA required for each module and overall course, and how does this affect certificate and placement eligibility?",evaluation,passing-criteria
+"How are placement eligibility criteria calculated (such as minimum CGPA), and will taking exams online or from abroad affect my placement eligibility?",evaluation,placement-eligibility
+"How are online and offline exams proctored, what permissions are required (camera, mic, screen), and how do I resolve common proctoring errors?",evaluation,proctoring
+"I think there is an error or ambiguity in an evaluation question, options, or marks awarded. How can I report this and get it reviewed?",evaluation,question-error
+I believe some of my correct answers were marked wrong or the official answer key/question is incorrect. How can I request a re-evaluation or raise a dispute?,evaluation,re-evaluation
+What is the process and eligibility for reattempts or improvement exams if I fail or score low in a module or final evaluation?,evaluation,reattempt-policy
+"Can I get a detailed breakdown of my exam or assignment marks, see my answer sheet or answer key, and understand where I lost marks?",evaluation,result-and-feedback
+"My evaluation or assignment score seems incorrect, missing, or shows me as absent or zero despite attempting. How can I get this discrepancy reviewed or corrected?",evaluation,result-discrepancy
+"When and where can I see my quiz, assignment, module, and final exam results, and when will my overall scorecard or CGPA be released?",evaluation,result-timeline
+"I completed a quiz, assignment, or exam but my score or result is not visible on the portal yet. When will it be shown and where can I find it?",evaluation,result-visibility
+"How can I book or change my slot for an offline quiz, exam, or project presentation, and what if my preferred slot is not available?",evaluation,slot-booking
+I missed an assignment or project deadline or submitted the wrong/incomplete file. Can I get an extension or resubmit the corrected version?,evaluation,submission-correction
+"I am unable to upload, replace, or confirm my assignment or project submission due to file, link, or portal issues. How should I correctly submit and verify my work?",evaluation,submission-issues
+I am unable to access or start a test or video-based assessment due to platform errors like 'cannot read properties of undefined'. How can I resolve this?,evaluation,technical-error
+"I faced technical or proctoring issues during an evaluation (such as auto-submission, timer errors, camera/mic problems, or platform lag). Will I get another attempt or remedy?",evaluation,technical-issues-during-evaluation
+"How can I view my detailed evaluation report, including which questions I got right or wrong, and download a PDF of my scorecard or paper?",evaluation,view-scores-and-solutions
+I forgot my password or cannot log in to my account. How can I reset my password and regain access?,fallback-no-poc-mapped,account-access
+"My certificate has incorrect details (name, address, or file corruption), or I did not receive the digital/physical copy. How can I get it corrected or resent?",fallback-no-poc-mapped,certificate-correction
+"I have completed all course requirements but have not received my course completion certificate, transcript, or degree (soft or hard copy). When and how will I get it?",fallback-no-poc-mapped,certificate-issuance
+"I am facing issues with loan EMI penalties, repayment, or refund status related to my course. Whom should I contact for support?",fallback-no-poc-mapped,loan-repayment
+"I am not seeing any classes, schedule, or content in my app or LMS even though my batch should have started. Is there an issue with my access or batch mapping?",fallback-no-poc-mapped,missing-schedule
+I am not receiving placement or interview opportunities or see no jobs on the placement platform despite being eligible. How can I improve my profile and resolve this?,fallback-no-poc-mapped,placement-opportunities
+"How can I access, update, or resubmit my resume on the placement or LevelUp platform, and what should I do if my resume link is rejected?",fallback-no-poc-mapped,placement-platform-access
+I want to cancel my enrollment or exit the program and stop EMI payments. What is the process and refund policy?,fallback-no-poc-mapped,refund-deferral-restart
+"When will my semester or program results and final scorecard be declared, and why might others see results before me?",fallback-no-poc-mapped,result-timeline
+"When will my final course or semester results, detailed scorecard, SGPA/CGPA, and official transcript be released, and where can I view them?",fallback-no-poc-mapped,results-and-certification
+"I am unable to access or open assignments, or the submit option is disabled. How can I view and complete my assignments?",learning-support,assignment-access
+"How and when are assignments evaluated, and where can I see my assignment scores and detailed feedback to improve?",learning-support,assignment-evaluation
+"I missed assignment or project deadlines due to health, exams, or personal reasons. Can I get an extension or submit them late for evaluation?",learning-support,assignment-extension
+"My assignment status shows in progress, overdue, or not submitted even after I submitted it. How can I verify and fix my assignment status?",learning-support,assignment-status
+"How should I correctly submit assignments (files vs links, GitHub/Drive, screenshots), and how can I confirm that my submission was received?",learning-support,assignment-submission-process
+"Are assignments mandatory, and how do assignment marks impact my overall grade, CGPA, or pass criteria?",learning-support,assignments-policy
+"I joined the course late or missed several classes. How can I catch up using recordings, notes, and assignments, and what is the best way to restart?",learning-support,catching-up
+"Where can I find lecture notes, PPTs, notebooks, datasets, and other resources shared during or after class?",learning-support,class-resources
+My code runs correctly on my local machine but fails tests or shows errors on the assignment or coding platform. How can I debug and resolve this?,learning-support,coding-help
+"How can I get help understanding assignments, projects, or study material if I am struggling or from a non-technical background?",learning-support,concept-doubt
+"How can I get a bonafide letter, proof of enrollment, or other official documentation for study gap, employer, or external requirements?",learning-support,documentation
+"I am facing issues installing or using tools like Python, VS Code, Git, or Colab (errors like 'command not found'). How can I get environment setup support?",learning-support,environment-setup
+"What is the detailed syllabus and exam pattern for upcoming module or offline exams, and where can I find notes, sample papers, or mock tests to prepare?",learning-support,exam-preparation
+I want additional or one-on-one help because I am from a non-technical background or struggling to follow lectures. What extra support is available?,learning-support,extra-support
+"How can I change the language of instruction or batch (e.g., from English to Hindi/Hinglish) if I am not comfortable with the current language?",learning-support,language-preference
+"How can I access lecture recordings for classes I missed, and what should I do if some recordings are missing, incomplete, or not playing?",learning-support,lecture-recordings
+"I am unable to join a live session even though I am signed in and have the link (expired link, join button not working). What should I do?",learning-support,live-session-access
+"I am unable to see previous lectures, assignments, or notes in the Learn section or LMS after an update or batch change. How can I restore access?",learning-support,lms-access
+"How can I book or request a one-on-one mentoring or doubt-clearing session, and where can I find the mentor booking link or available slots?",learning-support,mentorship
+"How can I get guidance and support for my project or capstone (topic selection, format, submission, presentation, and team issues)?",learning-support,project-guidance
+I am not receiving class notifications or my scheduled classes are not showing correctly in the LMS calendar. How can I fix schedule and notification issues?,learning-support,schedule-notifications
+"Where can I access study materials, notes, PDFs, and additional resources beyond recorded videos, and can I download or print them?",learning-support,study-material
+I joined the program late and missed initial pre-requisite or foundation sessions. How can I access their recordings and will I get attendance for them?,pre-requisite-sessions,access-missed-sessions
+"How do I submit assignments for pre-requisite sessions on the LMS, and is late submission allowed?",pre-requisite-sessions,assignment-submission
+My attendance for pre-requisite or foundation sessions is marked absent or missing even though I attended or watched the recordings. How can I get it corrected?,pre-requisite-sessions,attendance-issue
+I want to change my batch or slot for pre-requisite sessions due to time zone or schedule issues. Is this possible?,pre-requisite-sessions,batch-or-slot-change
+"I am unable to see pre-requisite or foundation lectures, resources, or schedules in the LMS, or they have disappeared. How can I access them?",pre-requisite-sessions,content-access
+"I am unable to start or access my course, pre-requisite sessions, or LMS content even after enrollment. What should I do to begin learning?",pre-requisite-sessions,lms-access
+I am unable to log in or reset my password for the learning app or LMS before main classes start. How can I resolve pre-course login issues?,pre-requisite-sessions,login-issues
+I missed some pre-requisite or early sessions due to exams or personal reasons. How will this affect my progress and what can I do to catch up?,pre-requisite-sessions,missed-sessions
+"Is it mandatory to attend or complete pre-requisite/foundation sessions and assignments, and do they affect my attendance, CGPA, or eligibility?",pre-requisite-sessions,prerequisite-policy
+"When will my foundation or pre-requisite sessions start, how often will they be conducted, and where can I see their schedule?",pre-requisite-sessions,schedule
+"I am unable to log in to or access the LMS, app, or my account (forgot password, wrong credentials, or blocked access). How can I regain access?",product-support,account-access
+"How can I change or update my registered email address, mobile number, or profile details (name, photo, location) used for LMS and Zoom access?",product-support,account-management
+"I am unable to start, access, or complete a quiz, test, or assessment on the LMS due to technical or network errors. What should I do?",product-support,assessment-access
+"I missed an assignment deadline, my assignment was auto-submitted, or it shows as overdue. Can I get an extension or have it reopened?",product-support,assignment-deadline
+"My assignment or quiz score seems incorrect, shows zero despite submission, or I have not received grades or feedback yet. How can I get my grading reviewed?",product-support,assignment-grading
+"What is the correct format and process for submitting assignments or projects (file types, GitHub/Drive links, screenshots), and how can I verify that my links are accessible?",product-support,assignment-instructions
+"I submitted the wrong or incomplete assignment file or link. Can I update, replace, or resubmit my assignment?",product-support,assignment-resubmission
+"I submitted my assignment but it shows zero marks, overdue, or not submitted, or I received reminder emails after submission. How can I confirm and correct my submission status?",product-support,assignment-status
+"Assignments are not opening, the submit button is missing or inactive, or I cannot upload files or links. How can I submit my assignment correctly?",product-support,assignment-submission-issues
+"I am unable to open or access shared course files, Google Drive/Colab links, or datasets from the LMS. How can I resolve this?",product-support,content-access
+"I cannot see or access certain lectures, recordings, assignments, notes, or resources on the LMS (they are missing, disappeared, or incomplete). What should I do?",product-support,content-missing
+"I do not have a laptop or my device is not compatible. Can I complete lectures, assignments, and exams using a mobile phone or tablet, and what are the limitations?",product-support,device-compatibility
+"I am unable to submit required forms (refund, KYC, exam, campus immersion, etc.) due to errors. How can I successfully complete these submissions?",product-support,forms-and-submissions
+"How can I view my scores and feedback for assignments, quizzes, and exams on the portal?",product-support,grades-and-results
+"I am unable to join live online classes or sessions from the LMS or Zoom link (link missing, not working, or host not joined). How can I attend the session?",product-support,live-class-access
+"The LMS or app is not loading properly, shows a blank Learn tab, or does not display lectures, assignments, or resources. How can I fix this?",product-support,lms-learning-management-system
+"I am not receiving important emails, notifications, or WhatsApp messages about classes, exams, or interviews. How can I ensure I get all communications?",product-support,notifications-email
+I am unable to complete the course agreement or signature step on the LMS due to technical issues. How can I finish onboarding?,product-support,onboarding-agreement
+"How long will I have access to the LMS, recorded lectures, notes, and course content after the course or final exam is completed?",product-support,post-course-access
+"Recorded lecture videos are missing, incomplete, wrong, or not playing properly (buffering, freezing, no audio). How can I access or fix the recordings?",product-support,recorded-lectures
+"The course website, LMS, or mobile app is slow, freezing, or showing errors on my device. How can I troubleshoot technical performance issues?",product-support,technical-issues
+"I am facing issues with development tools or coding environments (VS Code, Python, Git, Colab, virtual machines). How can I get technical setup support?",product-support,tools-and-environment
+I am unable to access or play any recorded videos or they keep buffering despite a good internet connection. How can I fix video playback issues?,product-support,video-playback
+"I am facing issues with Zoom activation or authentication (expired link, no email, cannot join meetings). How can I complete Zoom setup and join classes?",product-support,zoom-access
+"How can I get help if I am not able to join Zoom classes, authenticate Zoom, or face repeated Zoom-related technical problems?",product-support,zoom-integration
+"Will I get academic credits (such as Academic Bank of Credits under NCrF) for this program, and how and when are they transferred to my university?",program-related-query,academic-credits
+"I cannot see previous sessions, recordings, or assignments in the LMS for my program or foundation modules. How can I access past content?",program-related-query,backlog-content
+"I want to change my batch, course, or language track (for example, from English to Hindi/Hinglish or to a different program). What is the process?",program-related-query,batch-or-language-change
+"What is campus immersion (or offline campus events), is it mandatory, what are the dates, and who bears travel and accommodation costs?",program-related-query,campus-immersion
+"What are the exact eligibility criteria for course completion and certification (CGPA, attendance, exams), and will I get a certificate if I fail or miss a module or offline exam?",program-related-query,certificate-eligibility
+"How long will I have access to course lectures, recordings, and LMS resources during and after the program, and is access lifetime or time-limited?",program-related-query,content-access-duration
+I am unable to access my course content or it shows as expired even though I have paid. How can I restore course access?,program-related-query,course-access
+"I want to change my course, specialization, or track (e.g., switch to a different AI/ML or software program). Is this possible and how?",program-related-query,course-change
+"How long will my course run, what is the overall program timeline and end date, and when will exams and final evaluations be conducted?",program-related-query,course-timeline
+"I missed or could not attend an offline or end-module exam due to health, travel, or exam clashes. Can I take it online, reschedule, or appear in a later cycle?",program-related-query,exam-reschedule
+How can I get a fee payment receipt or GST invoice for the program fees I have paid?,program-related-query,fee-invoice
+"I am facing financial hardship or issues with fee payments or EMIs (extra deductions, failed payments, need for invoice/GST bill). What support or options are available?",program-related-query,fees-and-payment
+"I missed a required form or assignment deadline (exam mode selection, campus immersion, placement forms, project submission). Can it be reopened or accepted late?",program-related-query,form-deadline
+"How is my final grade or CGPA calculated for the program, what is the weightage of assignments, quizzes, and exams, and what minimum CGPA is required for certificate and placements?",program-related-query,grading-policy
+"I am not receiving class updates, links, or community access even after payment and LMS activation. How can I complete onboarding and start learning?",program-related-query,onboarding-issues
+"What are the placement and career support criteria (minimum CGPA, attendance, assignments), and when will placement drives or support activities start?",program-related-query,placement-eligibility
+"How can I update my personal profile details (name, mobile number, email, education) so that they are correct on all official records and certificates?",program-related-query,profile-update
+"When will my program or classes start, what is the timetable, and where can I see the schedule and calendar for upcoming sessions and modules?",program-related-query,program-start-and-schedule
+"I want to cancel my admission, withdraw from the program, or defer to a later batch. What is the process, and what happens to my fees or EMIs?",program-related-query,program-withdrawal-and-refund
+"When and how will I receive my course completion certificate, degree, or digital certificate, and will a hard copy or transcript be provided?",program-related-query,result-and-certificate
+"How can I view my current marks, grades, or CGPA for quizzes, assignments, modules, and overall program performance on the portal?",program-related-query,results-access
+"I am a working professional or have other academic commitments and my class timings clash with my schedule. What options do I have (recordings, batch change, reschedule)?",program-related-query,schedule-conflict-support
+I have not received a response or resolution to a previously raised query or ticket. How can I escalate or follow up?,program-related-query,support-escalation
+"Where can I find the complete course syllabus, module-wise curriculum, and agenda, including which topics will be covered and when?",program-related-query,syllabus
+"How can I get a detailed timetable or weekly schedule for upcoming classes, including faculty, topics, and session types?",program-related-query,timetable-and-schedule
+"How can I get or use my referral link to refer friends, and how do I track the status and rewards of my referrals?",referrals,referral-link
+"What items or study materials (books, PDFs, notes) are provided as part of the course, and where can I access or download them?",student-kit,course-materials
+"I have not received my ID card, admission letter, or they contain incorrect details. How can I get them issued or corrected?",student-kit,id-card
+"How do I fill, submit, or correct mandatory onboarding or student kit forms on the LMS if I missed the deadline or faced technical issues?",student-kit,onboarding-form
+"When will I receive my student kit or welcome kit, what items are included, and how can I track its delivery status or resolve missing or damaged items?",student-kit,student-kit
+"How can I update or correct my address, T-shirt size, or personal details (name, email, photo) used for my student kit, ID card, and certificate delivery?",student-kit,student-kit-address
+"My student kit tracking link or ID shows errors like 'details not found' or 'article not booked', or the shipment is delayed or returned. How can I get accurate tracking or a re-dispatch?",student-kit,student-kit-tracking
